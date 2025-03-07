@@ -9,6 +9,7 @@ def solution(numbers):
     # 원소 3개가 있을 때 조합
     # 원소 4개가 있을 때 조합
     def backtracking(start, current):
+        nonlocal answer
         if len(current) == k:
             answer.append(current[:])
             return
